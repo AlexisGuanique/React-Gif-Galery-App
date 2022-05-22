@@ -11,8 +11,15 @@ export const GifExpertApp = () => {
     
 
     return (
-        <>
-            <h1>Gif Galery App</h1>
+        <>  
+            <div>
+                <p className='marca'>by Alexis Guanique</p>
+            </div>
+            
+            <div className='titulo'>
+                <h1>Gif Galery App</h1>
+            </div>
+            
 
             {/* Le pasamos setCategories como una propiedad a nuestro componente AddCategory */}
             <AddCategory setCategories = { setCategories } />
