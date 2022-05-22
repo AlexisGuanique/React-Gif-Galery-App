@@ -26,17 +26,6 @@ hr {
   
 }
 
-.titulo {
-  margin: 20px
-}
-
-.marca {
-  color: rgba(93, 127, 138, 0.795);
-  font-size: 0.9rem;
-  margin: 0;
-  text-align:right;
-}
-
 .card-grid {
   display: flex;
   flex-direction: row;
