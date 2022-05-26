@@ -1,4 +1,4 @@
-;import { renderHook } from "@testing-library/react-hooks";
+import { renderHook } from "@testing-library/react-hooks";
 import { useFetchGifs } from "../../hooks/useFetchGifs"
 
 describe('Pruebas en el hook useFetchGifs', () => {
