@@ -3,11 +3,13 @@ import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
 // Creacion del componente
-export const GifExpertApp = () => {
+export const GifExpertApp = ( {defaultCategories = [] } ) => {
     
     
     // De esta manera ceramos la lista de elementos para poder luego manipularla con el set categories
-    const [categories, setCategories] = useState(['Dragon Ball Z'])
+    // const [categories, setCategories] = useState(['Dragon Ball Z']);
+    const [categories, setCategories] = useState( defaultCategories );
+
     
 
     return (

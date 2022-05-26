@@ -1,6 +1,7 @@
 import React from 'react'
 import { useFetchGifs } from '../hooks/useFetchGifs';
 import { GifGridItem } from './GifGridItem';
+import { PropTypes } from 'prop-types' 
 
 
 // Componente que consume la api_key y muestra los gif
@@ -10,7 +11,7 @@ export const GifGrid = ( { category } ) => {
     // Utilizamos nuestro custom hook
     const { data:images, loading } = useFetchGifs( category );
 
-    console.log(images);
+    // console.log(images);
 
     return (
         <>
@@ -32,3 +33,7 @@ export const GifGrid = ( { category } ) => {
     )
 };
 
+
+GifGrid.propTypes = {
+    category: PropTypes.string.isRequired
+}

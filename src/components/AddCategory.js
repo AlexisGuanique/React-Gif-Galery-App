@@ -13,12 +13,16 @@ export const AddCategory = ( { setCategories } ) => {
     const handlInputChange = (e) => {
         // console.log(e.target.value);
         setInputValue(e.target.value);
+
+        // console.log('HandleInputChange llamado')
     }
 
 
     // De esta manera evitamos que refresque el formulario de la manera que viene por defecto
     const handleSubmit = (e) => {
         e.preventDefault()
+
+        // console.log('handleSubmit')
 
         // Validamos que el valor ingresado sea una palabra mayor de 2 letras
         if ( InputValue.trim().length > 1) {
@@ -32,6 +36,7 @@ export const AddCategory = ( { setCategories } ) => {
     // Lo que renderiza nuestro componente
     return (
         <form onSubmit={ handleSubmit }>
+            <p>{ InputValue }</p>
             <input 
                 type="text"
                 value={ InputValue }

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en componente <GifGrid /> Debe de mostrar items cuando se cargan imagenes useFetchGifs 1`] = `
+<Fragment>
+  <h2
+    className="animate__animated animate__fadeIn"
+  >
+     
+    Dragon Ball Z
+     
+  </h2>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id="123"
+      key="123"
+      title="La Vieja PEYA"
+      url="https://localhost/tumama/enpantaletas.jp"
+    />
+    <GifGridItem
+      id="123"
+      key="123"
+      title="La Vieja PEYA"
+      url="https://localhost/tumama/enpantaletas.jp"
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`Pruebas en componente <GifGrid /> Debe mostrar el componente <GifGrid /> correctamente 1`] = `
+<Fragment>
+  <h2
+    className="animate__animated animate__fadeIn"
+  >
+     
+    Dragon Ball Z
+     
+  </h2>
+  <p
+    className="animate__animated animate__flash"
+  >
+    Cargando...
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;

@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import { PropTypes } from 'prop-types';
 
-export const GifGridItem = ( { id, title, url } ) => {
+export const GifGridItem = ( {title, url } ) => {
 
     // console.log( id, title, url );
 
@@ -10,4 +11,11 @@ export const GifGridItem = ( { id, title, url } ) => {
             <p className='title'>{ title }</p>
         </div>
     )
+};
+
+
+// Configuracion de los PropTypes, de esta manera indicamos los lineamientos para trabajar con nuestro componente
+GifGridItem.protoType = {
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
 };
